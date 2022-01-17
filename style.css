@@ -1,0 +1,12 @@
+.code-output {
+    border: 2px solid black;
+  /*   height: 300px; */
+  }
+  
+  .add-border {
+    border: 2px solid black;
+  }
+  
+  .flex-container {
+    display: flex;
+  }
