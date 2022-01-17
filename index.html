@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Fun With Flex</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="code-input">
-          <form>
-            <input type="checkbox" name="flex-display" id="flex-display">
-            <label for="flex-display">Add display flex to parent element</label></br>
-          <p>Flex properties</p>
-          <label for="justify-content">justify-content: </label>
-          <select name="justify-content" id="justify-content">
-            <option value="flex-start" selected>flex-start</option>
-            <option value="flex-end">flex-end</option>
-            <option value="center">center</option>
-            <option value="space-between">space-between</option>
-            <option value="space-around">space-around</option>
-            <option value="space-evenly">space-evenly</option>
-          </select></br>
-          <button id="flex-items">Add another child to parent element</label>
-          </form>
-        </hr>
+      <div class="code-input">
+        <input type="checkbox" name="flex-display" id="flex-display" />
+        <label for="flex-display">Add display flex to parent element</label>
+        <hr />
+        <div class="properties">
+          <div class="parent-properties">
+            <p>Flex Parent Properties</p>
+            <label for="justify-content">justify-content: </label>
+            <select name="justify-content" id="justify-content">
+              <option value="flex-start" selected>flex-start</option>
+              <option value="flex-end">flex-end</option>
+              <option value="center">center</option>
+              <option value="space-between">space-between</option>
+              <option value="space-around">space-around</option>
+              <option value="space-evenly">space-evenly</option>
+            </select>
+            <br />
+            <label for="align-items">align-items: </label>
+            <select name="align-items" id="align-items">
+              <option value="stretch" selected>stretch</option>
+              <option value="flex-end">flex-end</option>
+              <option value="flex-start">flex-start</option>
+              <option value="center">center</option>
+              <option value="baseline">baseline</option>
+            </select>
+            <br />
+          </div>
+          <div class="child-properties">
+            <p>Flex Child Properties</p>
+            <label for="child">Select Child: </label>
+            <select name="child" id="child">
+                <option value="0">Child 1</option>
+                <option value="1">Child 2</option>
+            </select>
+            <br>
+            <label for="align-self">align-self: </label>
+            <select name="align-self" id="align-self">
+              <option value="auto" selected>auto</option>
+              <option value="flex-end">flex-end</option>
+              <option value="flex-start">flex-start</option>
+              <option value="center">center</option>
+              <option value="stretch">stretch</option>
+              <option value="baseline">baseline</option>
+            </select>
+            <br />
+          </div>
+        </div>
+
+        <button id="flex-items">Add another child to parent element</button>
+        <hr />
       </div>
       <div class="code-output">
         Parent element
-        <div>Child Element</div>
-        <div>Child Element</div>
+        <div class="add-border">Child Element 1</div>
+        <div class="add-border">Child Element 2</div>
       </div>
-      </div>
-</body>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

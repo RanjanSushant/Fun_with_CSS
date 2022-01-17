@@ -1,12 +1,25 @@
 .code-output {
-    border: 2px solid black;
-  /*   height: 300px; */
-  }
-  
-  .add-border {
-    border: 2px solid black;
-  }
-  
-  .flex-container {
+  border: 2px solid black;
+  height: 50vh;
+  padding: 20px;
+}
+
+.add-border {
+  border: 2px solid black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.properties {
     display: flex;
-  }
+}
+
+.properties > div {
+    margin: 0 20px;
+}
+
+button {
+  margin-top: 10px;
+}
